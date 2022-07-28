@@ -1,0 +1,23 @@
+{
+  "extends": "@tsconfig/node17/tsconfig.json",
+  "include": [
+    "env.d.ts",
+    "src/server/**/*",
+    "src/server/**/*.ts",
+    "src/db/**/*",
+    "src/db/**/*.ts",
+    "src/common/**/*",
+    "src/common/**/*.ts"
+  ],
+  "exclude": ["src/**/__tests__/*", "src/client/**/*"],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/server/*": ["./src/server/*"],
+      "@/common/*": ["./src/common/*"],
+      "@/db/*": ["./src/db/*"],
+    }
+  }
+}

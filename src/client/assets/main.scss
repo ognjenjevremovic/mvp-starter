@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@charset "utf-8";
+@import '/node_modules/bulma/bulma.sass';
+
+h1 {
+  @apply text-2xl font-normal leading-normal mt-0 mb-2 text-green-500 text-center;
+}
+
+p.intro {
+  @apply text-xl font-bold text-green-800 text-center;
+}

@@ -1,0 +1,13 @@
+{
+  "restartable": "rs",
+  "ignore": [".git", "node_modules/**/node_modules", "src/client/**"],
+  "watch": "src/server/**/*.ts",
+  "verbose": true,
+  "execMap": {
+    "ts": "node --require ts-node/register/transpile-only --require tsconfig-paths/register"
+  },
+  "env": {
+    "NODE_ENV": "development",
+    "TS_NODE_PROJECT": "./tsconfig.server.json"
+  }
+}

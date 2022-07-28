@@ -1,0 +1,20 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": [
+    "env.d.ts",
+    "src/client/**/*",
+    "src/client/**/*.vue",
+    "src/client/**/*.ts",
+    "src/common/**/*",
+    "src/common/**/*.ts"
+  ],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/client/*": ["./src/client/*"],
+      "@/common/*": ["./src/common/*"],
+    }
+  }
+}

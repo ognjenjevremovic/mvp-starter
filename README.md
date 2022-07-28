@@ -43,6 +43,11 @@ The project uses a code stack that allows me to be fast when coding / prototypin
 * [Bulma](https://bulma.io/) - the modern CSS framework that just works,
 * Other *tools* and *libraries* ([complete list](./package.json)).
 
+## Requirements
+
+* `Node >= v16+` or higher,
+* `npm >= 8+` or higher.
+
 ## Project Setup
 
 By cloning the repository locally and changing the remote:
@@ -75,6 +80,8 @@ To run both commands in a single terminal session:
 ```sh
 $ npm run start
 ```
+
+**Note: *Vite is configured as a Proxy server, proxying all requests from `^/api/.*` to `http://localhost:8000` where API (server application) is listening for incoming requests. If you were to deploy the application to remote (or use it with Docker), without Vite, you will need to setup NGINX / Apache accordingly.***
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
