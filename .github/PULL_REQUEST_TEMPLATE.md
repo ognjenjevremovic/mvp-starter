@@ -5,8 +5,8 @@ Search open/closed issues and PR before submitting your own, as someone might ha
 -->
 
 **Prior to filing a PR, please:**
-- [open an issue](https://github.com/ognjenjevremovic/{{name}}/issues/new) to discuss your proposed change.
-- ensure that `npm run lint && npm run test && npm run build` passes locally.
+- [open an issue](https://github.com/ognjenjevremovic/mvp-starter/issues/new) to discuss your proposed change.
+- ensure that everything works locally.
 
 R: @ognjenjevremovic
 
