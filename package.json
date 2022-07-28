@@ -1,0 +1,34 @@
+{
+  "name": "{{name}}",
+  "version": "0.0.0",
+  "description": "Nothing to see here",
+  "main": "src/index.js",
+  "type": "module",
+  "exports": "./src/index.js",
+  "scripts": {
+    "test": "standard && echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ognjenjevremovic/{{name}}.git"
+  },
+  "keywords": [
+    "{{name}}"
+  ],
+  "author": "Ognjen Jevremovic <https://github.com/ognjenjevremovic> (https://ognjenjevremovic.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ognjenjevremovic/{{name}}/issues"
+  },
+  "homepage": "https://github.com/ognjenjevremovic/{{name}}#readme",
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.9.0"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3"
+  }
+}
